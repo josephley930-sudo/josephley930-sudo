@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Luxury Car Rental in Jaipur | LimoCar India</title>
+  <meta name="description" content="Book reliable luxury car rental in Jaipur for airport transfers, weddings, city tours, Rajasthan trips and corporate travel. Call or WhatsApp LimoCar India today." />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { color: #1f2937; background: #ffffff; line-height: 1.6; }
+    a { text-decoration: none; }
+    .container { width: 90%; max-width: 1180px; margin: auto; }
+
+    header { background: #ffffff; box-shadow: 0 2px 12px rgba(0,0,0,0.08); position: sticky; top: 0; z-index: 1000; }
+    .nav { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+    .logo { font-size: 24px; font-weight: 800; color: #0f172a; }
+    .logo span { color: #d97706; }
+    .nav-links { display: flex; gap: 24px; align-items: center; }
+    .nav-links a { color: #334155; font-size: 15px; font-weight: 600; }
+
+    .btn { display: inline-block; padding: 12px 20px; border-radius: 8px; font-weight: 700; transition: 0.3s; border: none; cursor: pointer; }
+    .btn-primary { background: #d97706; color: #ffffff; }
+    .btn-primary:hover { background: #b45309; }
+    .btn-secondary { background: #0f172a; color: #ffffff; }
+
+    .hero {
+      background: linear-gradient(rgba(15,23,42,0.82), rgba(15,23,42,0.82)), url('https://images.unsplash.com/photo-1549924231-f129b911e442?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover; background-position: center; color: #ffffff; padding: 100px 0;
+    }
+    .hero-content { max-width: 760px; }
+    .badge { display: inline-block; background: rgba(217,119,6,0.18); color: #fbbf24; padding: 8px 14px; border-radius: 50px; margin-bottom: 18px; font-weight: 700; font-size: 14px; }
+    h1 { font-size: 52px; line-height: 1.1; margin-bottom: 20px; }
+    .hero p { font-size: 19px; margin-bottom: 28px; color: #e5e7eb; }
+    .hero-actions { display: flex; gap: 14px; flex-wrap: wrap; }
+
+    .quick-form { background: #ffffff; padding: 24px; border-radius: 16px; margin-top: -50px; box-shadow: 0 12px 35px rgba(0,0,0,0.12); position: relative; z-index: 10; }
+    .form-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 14px; }
+    input, select { padding: 14px; border: 1px solid #d1d5db; border-radius: 8px; width: 100%; font-size: 15px; }
+
+    .section { padding: 80px 0; }
+    .section-title { text-align: center; margin-bottom: 44px; }
+    .section-title h2 { font-size: 36px; color: #0f172a; margin-bottom: 10px; }
+    .section-title p { color: #64748b; max-width: 650px; margin: auto; }
+
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .card { padding: 28px; border: 1px solid #e5e7eb; border-radius: 16px; background: #ffffff; box-shadow: 0 8px 24px rgba(0,0,0,0.05); }
+    .card h3 { font-size: 22px; margin-bottom: 12px; color: #0f172a; }
+    .card p { color: #64748b; }
+
+    .fleet { background: #f8fafc; }
+    .fleet-card img { width: 100%; height: 210px; object-fit: cover; border-radius: 14px; margin-bottom: 16px; }
+    .fleet-meta { display: flex; justify-content: space-between; margin: 12px 0 18px; color: #64748b; font-size: 14px; }
+
+    .why { background: #0f172a; color: #ffffff; }
+    .why .section-title h2, .why h3 { color: #ffffff; }
+    .why p { color: #cbd5e1; }
+    .trust-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; text-align: center; }
+    .trust-box { background: rgba(255,255,255,0.08); padding: 24px; border-radius: 14px; }
+    .trust-box strong { display: block; font-size: 30px; color: #fbbf24; }
+
+    .reviews { background: #f8fafc; }
+    .review-stars { color: #f59e0b; margin-bottom: 12px; font-size: 18px; }
+
+    .cta-section { background: linear-gradient(135deg, #d97706, #92400e); color: #ffffff; text-align: center; padding: 70px 20px; }
+    .cta-section h2 { font-size: 38px; margin-bottom: 14px; }
+    .cta-section p { margin-bottom: 24px; font-size: 18px; }
+
+    .faq-item { border-bottom: 1px solid #e5e7eb; padding: 20px 0; }
+    .faq-item h3 { color: #0f172a; margin-bottom: 8px; }
+
+    footer { background: #020617; color: #cbd5e1; padding: 50px 0 20px; }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 28px; margin-bottom: 30px; }
+    footer h3 { color: #ffffff; margin-bottom: 14px; }
+    footer a { display: block; color: #cbd5e1; margin-bottom: 8px; }
+
+    .floating-actions { position: fixed; right: 18px; bottom: 18px; display: flex; flex-direction: column; gap: 10px; z-index: 999; }
+    .floating-actions a { padding: 13px 18px; border-radius: 50px; color: #ffffff; font-weight: 800; box-shadow: 0 8px 20px rgba(0,0,0,0.2); }
+    .whatsapp { background: #16a34a; }
+    .call { background: #2563eb; }
+
+    @media (max-width: 900px) {
+      h1 { font-size: 38px; }
+      .nav-links { display: none; }
+      .form-grid, .cards, .trust-grid, .footer-grid { grid-template-columns: 1fr; }
+      .hero { padding: 80px 0; }
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <div class="logo">LimoCar <span>India</span></div>
+    <nav class="nav-links">
+      <a href="#services">Services</a><a href="#fleet">Fleet</a><a href="#packages">Packages</a><a href="#reviews">Reviews</a><a href="#contact" class="btn btn-primary">Book Now</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero"><div class="container hero-content"><span class="badge">Trusted Car Rental Service in Jaipur</span><h1>Luxury Car Rental in Jaipur for Tours, Weddings & Airport Transfers</h1><p>Book clean, comfortable and chauffeur-driven cars in Jaipur for local sightseeing, Rajasthan tours, corporate travel and special events.</p><div class="hero-actions"><a href="tel:+919999999999" class="btn btn-primary">Call Now</a><a href="https://wa.me/919999999999" class="btn btn-secondary">Get Price on WhatsApp</a></div></div></section>
+
+<div class="container quick-form" id="contact"><form class="form-grid"><input type="text" placeholder="Your Name" required /><input type="tel" placeholder="Phone Number" required /><select required><option value="">Select Service</option><option>Jaipur City Tour</option><option>Airport Transfer</option><option>Wedding Car Rental</option><option>Rajasthan Tour Package</option><option>Corporate Travel</option></select><input type="date" required /><button class="btn btn-primary" type="submit">Request Quote</button></form></div>
+
+<section class="section" id="services"><div class="container"><div class="section-title"><h2>Car Rental Services We Offer</h2><p>Simple booking, professional drivers and flexible packages for every travel need in Jaipur and Rajasthan.</p></div><div class="cards"><div class="card"><h3>Jaipur Local Sightseeing</h3><p>Visit Amber Fort, Hawa Mahal, City Palace, Jantar Mantar and other Jaipur attractions with a comfortable private cab.</p></div><div class="card"><h3>Airport Pickup & Drop</h3><p>On-time Jaipur airport transfers with clean cars and trained chauffeurs for stress-free travel.</p></div><div class="card"><h3>Wedding Car Rental</h3><p>Luxury cars for wedding entry, guest movement and special occasions with premium service support.</p></div><div class="card"><h3>Rajasthan Tour Packages</h3><p>Book Jaipur to Udaipur, Jodhpur, Pushkar, Agra and Delhi trips with flexible route plans.</p></div><div class="card"><h3>Corporate Travel</h3><p>Reliable cars for business meetings, hotel transfers and executive travel in Jaipur.</p></div><div class="card"><h3>Outstation Taxi</h3><p>Safe and comfortable outstation cab service from Jaipur to nearby cities and tourist destinations.</p></div></div></div></section>
+
+<section class="section fleet" id="fleet"><div class="container"><div class="section-title"><h2>Choose Your Car</h2><p>From budget-friendly sedans to premium luxury cars, choose the right car as per your travel plan.</p></div><div class="cards"><div class="card fleet-card"><img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=900&q=80" alt="Sedan car rental in Jaipur"><h3>Sedan Cars</h3><div class="fleet-meta"><span>4 Seats</span><span>Local / Outstation</span></div><a href="https://wa.me/919999999999" class="btn btn-primary">Ask Price</a></div><div class="card fleet-card"><img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=900&q=80" alt="SUV car rental in Jaipur"><h3>SUV Cars</h3><div class="fleet-meta"><span>6-7 Seats</span><span>Family Tours</span></div><a href="https://wa.me/919999999999" class="btn btn-primary">Ask Price</a></div><div class="card fleet-card"><img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80" alt="Luxury car rental in Jaipur"><h3>Luxury Cars</h3><div class="fleet-meta"><span>Premium</span><span>Wedding / VIP</span></div><a href="https://wa.me/919999999999" class="btn btn-primary">Ask Price</a></div></div></div></section>
+
+<section class="section" id="packages"><div class="container"><div class="section-title"><h2>Popular Jaipur & Rajasthan Packages</h2><p>High-demand packages designed for tourists, families, corporates and wedding guests.</p></div><div class="cards"><div class="card"><h3>Jaipur One Day Tour</h3><p>Perfect for tourists who want to explore the best places in Jaipur in one day.</p></div><div class="card"><h3>Jaipur to Agra Trip</h3><p>Comfortable Jaipur to Agra car rental for Taj Mahal and same-day return or overnight trip.</p></div><div class="card"><h3>Golden Triangle Tour</h3><p>Delhi, Agra and Jaipur private car package with flexible itinerary and experienced driver.</p></div></div></div></section>
+
+<section class="section why"><div class="container"><div class="section-title"><h2>Why Choose LimoCar India?</h2><p>We focus on comfort, safety, punctuality and simple booking experience.</p></div><div class="trust-grid"><div class="trust-box"><strong>4000+</strong><span>Happy Clients</span></div><div class="trust-box"><strong>35+</strong><span>Locations Covered</span></div><div class="trust-box"><strong>24/7</strong><span>Booking Support</span></div><div class="trust-box"><strong>4.8★</strong><span>Customer Rating</span></div></div></div></section>
+
+<section class="section reviews" id="reviews"><div class="container"><div class="section-title"><h2>Customer Reviews</h2><p>Real feedback builds trust and helps visitors book faster.</p></div><div class="cards"><div class="card"><div class="review-stars">★★★★★</div><p>Very professional service. Car was clean and driver was on time. Best for Jaipur sightseeing.</p><h3>Rahul Sharma</h3></div><div class="card"><div class="review-stars">★★★★★</div><p>Booked for airport pickup and city tour. Smooth experience and quick WhatsApp response.</p><h3>Priya Mehta</h3></div><div class="card"><div class="review-stars">★★★★★</div><p>Good service for family Rajasthan trip. Driver was polite and route was well planned.</p><h3>Amit Jain</h3></div></div></div></section>
+
+<section class="cta-section"><div class="container"><h2>Need a Car in Jaipur Today?</h2><p>Call or WhatsApp now and get a quick quote for your trip.</p><a href="tel:+919999999999" class="btn btn-secondary">Call for Booking</a></div></section>
+
+<section class="section"><div class="container"><div class="section-title"><h2>Frequently Asked Questions</h2><p>Quick answers before booking your Jaipur car rental.</p></div><div class="faq-item"><h3>Do you provide same-day booking?</h3><p>Yes, subject to car availability. Call or WhatsApp for immediate confirmation.</p></div><div class="faq-item"><h3>Are chauffeurs included?</h3><p>Yes, all bookings include trained chauffeurs for local and outstation trips.</p></div><div class="faq-item"><h3>Can I customize my Rajasthan itinerary?</h3><p>Absolutely. We offer flexible routes and package customization based on your travel plan.</p></div></div></section>
+
+<footer><div class="container"><div class="footer-grid"><div><h3>LimoCar India</h3><p>Luxury car rental in Jaipur for airport transfers, weddings, city tours and outstation travel.</p></div><div><h3>Quick Links</h3><a href="#services">Services</a><a href="#fleet">Fleet</a><a href="#packages">Packages</a></div><div><h3>Contact</h3><a href="tel:+919999999999">+91 99999 99999</a><a href="https://wa.me/919999999999">WhatsApp</a><a href="mailto:hello@limocarindia.com">hello@limocarindia.com</a></div><div><h3>Service Areas</h3><p>Jaipur, Ajmer, Pushkar, Udaipur, Jodhpur, Delhi, Agra</p></div></div><p>© 2026 LimoCar India. All rights reserved.</p></div></footer>
+
+<div class="floating-actions"><a href="https://wa.me/919999999999" class="whatsapp">WhatsApp</a><a href="tel:+919999999999" class="call">Call Now</a></div>
+</body>
+</html>
